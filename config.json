@@ -1,17 +1,6 @@
 {
   "spider": "",
-  "sites": [
-    {
-      "key": "demo_site",
-      "name": "示例站点（待替换）",
-      "type": 1,
-      "api": "https://example.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "hide": 0
-    }
-  ],
+  "sites": [],
   "parses": [
     {
       "name": "默认嗅探",
@@ -20,17 +9,55 @@
     }
   ],
   "flags": [
-    "电影",
-    "电视剧",
-    "综艺",
-    "动漫",
-    "纪录片"
+    "纪录片",
+    "新闻",
+    "科教",
+    "少儿",
+    "音乐",
+    "旅行",
+    "天气"
   ],
   "lives": [
     {
-      "name": "示例直播（待替换）",
+      "name": "纪录片 · Documentary",
       "type": 0,
-      "url": "./live.m3u",
+      "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u",
+      "playertype": 2
+    },
+    {
+      "name": "新闻 · News",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/categories/news.m3u",
+      "playertype": 2
+    },
+    {
+      "name": "科教 · Science",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/categories/science.m3u",
+      "playertype": 2
+    },
+    {
+      "name": "少儿 · Kids",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/categories/kids.m3u",
+      "playertype": 2
+    },
+    {
+      "name": "音乐 · Music",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/categories/music.m3u",
+      "playertype": 2
+    },
+    {
+      "name": "旅行 · Travel",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/categories/travel.m3u",
+      "playertype": 2
+    },
+    {
+      "name": "天气 · Weather",
+      "type": 0,
+      "url": "https://iptv-org.github.io/iptv/categories/weather.m3u",
       "playertype": 2
     }
   ],
