@@ -1,0 +1,54 @@
+{
+  "spider": "",
+  "sites": [
+    {
+      "key": "demo_site",
+      "name": "示例站点（待替换）",
+      "type": 1,
+      "api": "https://example.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "hide": 0
+    }
+  ],
+  "parses": [
+    {
+      "name": "默认嗅探",
+      "url": "",
+      "type": 0
+    }
+  ],
+  "flags": [
+    "电影",
+    "电视剧",
+    "综艺",
+    "动漫",
+    "纪录片"
+  ],
+  "lives": [
+    {
+      "name": "示例直播（待替换）",
+      "type": 0,
+      "url": "./live.m3u",
+      "playertype": 2
+    }
+  ],
+  "ijk": {
+    "mediaCodec": 1,
+    "mediaCodecAutoRotate": 1,
+    "mediaCodecHandleResolutionChange": 1,
+    "opensles": 0,
+    "soundTouch": 1
+  },
+  "ads": [
+    "mimg.0c1q0l.cn",
+    "www.googletagmanager.com"
+  ],
+  "doh": [
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query"
+    }
+  ]
+}
