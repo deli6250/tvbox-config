@@ -1,0 +1,51 @@
+name: 更新直播源
+
+# 每天北京时间 6:30 / 18:30 自动抓取更新，也可在 Actions 页面手动触发
+# 结果提交到 live/ 目录，由本仓库现有 GitHub Pages（分支部署）直接对外提供
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 22,10 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "update-live"
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 抓取并校验直播源
+        working-directory: live-crawler
+        run: python crawler.py
+
+      - name: 发布到 live 目录
+        run: |
+          mkdir -p live
+          cp live-crawler/output/result.txt live/result.txt
+          cp live-crawler/output/result.m3u live/result.m3u
+          cp live-crawler/output/log.txt live/log.txt
+
+      - name: 提交结果
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live/
+          if git diff --cached --quiet; then
+            echo "本次结果无变化，跳过提交"
+          else
+            git commit -m "自动更新直播源 $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git push
+          fi

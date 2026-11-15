@@ -1,0 +1,8 @@
+# 抓取种子列表：每行一个 m3u / txt 直播列表地址，# 开头为注释
+# 爬虫会逐个抓取、自动识别格式，只保留 channels.txt 里的央视/卫视频道
+# 你可以增删：任何公开可访问的 m3u/txt 列表地址都能加进来
+# 注意：种子只是"候选线索"，每条接口都会经过实测校验，失效的自动丢弃
+https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
+https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/bbxx365_lite.txt
+https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/itv.m3u
+https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u

@@ -1,0 +1,13 @@
+{
+  "keep_per_channel": 6,
+  "max_candidates_per_channel": 20,
+  "workers": 24,
+  "channel_workers": 10,
+  "speed_test_seconds": 3,
+  "speed_test_bytes": 1572864,
+  "min_speed_mbps": 0.05,
+  "lenient": true,
+  "include_ipv6": false,
+  "request_timeout": 10,
+  "logo_base": "https://raw.githubusercontent.com/fanmingming/live/main/tv"
+}
