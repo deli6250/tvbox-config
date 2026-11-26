@@ -1,7 +1,7 @@
-2026-11-26 12:18 更新成功：324 条可用接口，56/56 个频道有源，耗时 140 秒
+2026-11-27 03:46 更新成功：325 条可用接口，56/56 个频道有源，耗时 152 秒
 
-[OK] https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt  条目447 命中37
-[OK] https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/bbxx365_lite.txt  条目7388 命中3211
+[OK] https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt  条目407 命中20
+[OK] https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/bbxx365_lite.txt  条目7357 命中3228
 [OK] https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/itv.m3u  条目189 命中95
 [OK] https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u  条目1226 命中191
 
